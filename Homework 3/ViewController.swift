@@ -112,7 +112,6 @@ class TaskThree_ViewController:UIViewController {
     
     @IBAction func runButtonPressed(_ sender: Any) {
         UIView.animate(withDuration: 1, delay: 0) {
-            //            self.runnerViewLeftConstraint.constant = 290
             self.runnerViewLeftConstraint.priority = UILayoutPriority(rawValue: 999)
             self.runnerRightConstraint.priority = UILayoutPriority(1000)
             self.runnerRightConstraint.constant = 0
